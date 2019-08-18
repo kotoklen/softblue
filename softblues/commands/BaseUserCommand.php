@@ -6,7 +6,7 @@ abstract class BaseUserCommand implements BaseCommand
 	protected $user_data;
 	protected $log;
 	
-	private function __construct($user_data)
+	public function __construct($user_data)
 	{
 		$this->dao = new UserDAO();
 		$this->log = new MyLog();
