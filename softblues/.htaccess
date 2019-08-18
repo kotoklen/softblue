@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /softblues
+
+RewriteCond %{REQUEST_URI} !\.jpg
+RewriteCond %{REQUEST_URI} !\.gif
+RewriteCond %{REQUEST_URI} !\.png
+RewriteCond %{REQUEST_URI} !services
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [L]
+
