@@ -1,6 +1,17 @@
 {
+    "name":"softblues_test",
+    "authors": [
+    {
+        "name": "Lena Volyanska",
+        "email": "klen.lena@gmail.com"
+    }],
     "require": {
         "monolog/monolog": "^1.24",
         "twbs/bootstrap": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+             "": ["commands/","renderers/","db/","utils/",""]
+        }
     }
 }
